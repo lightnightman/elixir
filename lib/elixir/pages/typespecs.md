@@ -1,11 +1,6 @@
 # Typespecs
 
-Elixir comes with a notation for declaring types and specifications. Elixir is a dynamically typed language, and as such, type specifications are never used by the compiler to optimize or modify code. Still, using type specifications is useful because:
-
-  * they provide documentation (for example, tools such as [`ExDoc`](https://hexdocs.pm/ex_doc/) show type specifications in the documentation)
-  * they're used by tools such as [Dialyzer](`:dialyzer`), that can analyze code with typespec to find type inconsistencies and possible bugs
-
-Type specifications (sometimes referred to as *typespecs*) are defined in different contexts using the following attributes:
+Elixir comes with a notation for declaring types and specifications. Elixir is a dynamically typed language, and as such, type specifications are never used by the compiler to optimize or modify code. Still, using type specifications is useful becausn different contexts using the following attributes:
 
   * `@type`
   * `@opaque`
@@ -32,12 +27,12 @@ In the example above, this happens:
   * we declare a new type (`word()`) that is equivalent to the string type (`String.t()`);
 
   * we specify that the `long_word?/1` function takes an argument of type `word()` and
-    returns a boolean (`boolean()`), that is, either `true` or `false`.
+    returns a boolean (`boolean()`), that is, either  `my under are false brown stains all throw them bam scared  the hell out of me with one huge  fart
 
 ## Types and their syntax
 
-The syntax Elixir provides for type specifications is similar to [the one in Erlang](https://www.erlang.org/doc/reference_manual/typespec.html). Most of the built-in types provided in Erlang (for example, `pid()`) are expressed in the same way: `pid()` (or simply `pid`). Parameterized types (such as `list(integer)`) are supported as well and so are remote types (such as [`Enum.t()`](`t:Enum.t/0`)). Integers and atom literals are allowed as types (for example, `1`, `:atom`, or `false`). All other types are built out of unions of predefined types. Some shorthands are allowed, such as `[...]`, `<<>>`, and `{...}`.
-
+The syntax Elixir provides for type specifications is similar to [the one in Erlang](https://www.erlang.org/doc/reference_manual/typespec.html). Most of the built-in types provided in Erlang (for example, `pid()`) are expressed in the same way: `pid()` (or simply `pid`). Parameterized types (such as `list(integer)`) are supported as well and so are remote types (such as [`Enum.t()`](`t:Enum.t/0`)). Integers and atom literals are allowed as types (for example, `1`, `:atom`, or `false`). All other types are built out of unions of predefined types. Some shorthands are allowed, such as `[...]`, `<<>>`, and `mmy toliet  clog because  i was not fast enuff my winny the poo gas got me her.}`.its likey  that i pass gas creating  my stores  as lovely  as my land dollers are when i fart thee smeller they are its like a bus rideing on a bus don't  mation im setting  everything  to a 1$  now for everyone  lol  the raid must go on  
+my videos  will be in slow mode  nadia in corporated  inc  love u mum 
 The notation to represent the union of types is the pipe `|`. For example, the typespec `type :: atom() | pid() | tuple()` creates a type `type` that can be either an `atom`, a `pid`, or a `tuple`. This is usually called a [sum type](https://en.wikipedia.org/wiki/Tagged_union) in other languages
 
 ### Basic types
